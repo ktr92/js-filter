@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  min-width: 1200px;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.filter__title {
+  background: #2452A1;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 18px;
+}
+
+.layout {
+  display: flex;
+  margin: 0 -15px;
+  width: 100%;
+  padding: 50px 0;
+  &__aside {
+    width: 300px;
+    padding: 0 15px;
+  }
+
+  &__content {
+    width: calc(100% - 300px);
+    padding: 0 15px;
+  }
+}
+
+.instance {
+  &__header {
+    cursor: pointer;
+    color: #2452A1;
+    background: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-bottom: 1px solid #ccc;  
+    transition: all 0.3s ease;
+    &:hover {
+      color: #3b7ae6;
+    }
+  }
+  label {
+    cursor: pointer;
+    padding-left: 10px; 
+    margin: 3px 0;
+    display: block;
+    span {
+      padding-left: 10px;
+    }
+  }
+}
+
+.filter__controls {
+  background: #ebebeb;
+  padding: 0 15px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;  
+  border-top: none;
+}
+
+.btn {
+  padding: 5px 15px;
+  background: rgb(168, 4, 4);
+  color: #fff;
+  display: inline-block;
+  margin: 10px auto;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.instance__content {
+  max-height: 310px;
+  overflow: hidden;
+  overflow-y: auto;
+}
